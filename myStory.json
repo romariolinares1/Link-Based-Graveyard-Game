@@ -1,0 +1,192 @@
+{
+    "Title": "Dead Treasure in the Graveyard",
+    "Music": "Music by Bordyceps (https://bordyceps.bandcamp.com/album/vermis-soundtrack-restored?from=hp)",
+    "Credits": "Created by Romario Linares (relinare@ucsc.edu).",
+    "InitialLocation": "Graveyard",
+    "Locations": {
+        "Graveyard": {
+            "Body": "Tombstones, weathered and leaning like giants from an ancient past, jut from the dirt like fingers reaching out to the heavens. Wilted ivy creeps along the ruined stone of graves and mausoleums as gnarled trees cast monstrous shadows under the moonlight. In the heart of this sanctuary of dead rests an immeasurable treasure once belonging to a powerful wizard. You venture forth into the graveyard seeing three points of intrigue. Where do you go?",
+            "Choices": [
+                {
+                    "Text": "The dilapidated building to the West",
+                    "Target": "Mausoleum"
+                },
+                {
+                    "Text": "The eerie entrance of a Crypt up ahead",
+                    "Target": "CryptEntrance"
+                },
+                {
+                    "Text": "The random wooden shed to the East",
+                    "Target": "WoodenShed"
+                }
+            ]
+        },
+        "Mausoleum": {
+            "Body": "A decrepit mausoleum stands before you, lost to time but also inviting you in with a haunting hymm. There are likely to be filled tombs of goods and bones waiting inside. What do you do?",
+            "Choices": [
+                {
+                    "Text": "Go back to where you started",
+                    "Target": "Graveyard"
+                },
+                {
+                    "Text": "Go inside",
+                    "Target": "TombRoom"
+                }
+            ]
+        },
+        "TombRoom": {
+            "Body":"Stepping inside, you are greeted with the foul stench of death. This is a place of burial so it is only necessary for it to be lined with tombs containing the remains of past warriors af the land. An unknown language from the past is etched onto the wall likely telling tales of who these warriors once were in their time. However, curiosity gets the best of you and you think there might be something inside these tombs. What do you do?",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Mausoleum"
+                },
+                {
+                    "Text": "Open a tomb",
+                    "Target": "OpenTombs"
+                }
+            ]
+        },
+        "OpenTombs": {
+            "Body": "You uncover one of the tomb lids and find skeletal remains and a few silver shendles hidden inside. You take the shendles for yourself. What do you do?",
+            "GuiltText": "You have uncovered all of the tomb lids; thus, desecrating this mausoleum. You feel an overwhelming sense of guilt rush over you as your pockets are filled with the coin of the honorable dead.",
+            "Choices": [
+                {
+                    "Text": "Keep exploring the graveyard",
+                    "Target": "Graveyard"
+                },
+                {
+                    "Text": "Open a tomb",
+                    "Target": "OpenTombs"
+                }
+            ]
+        },
+        "CryptEntrance": {
+            "Body": "You see a small ruined building before you with a cross perched atop. Rotting twigs from the surrounding brushes encase the crypt like some grotesque hug. When you try entering into the crypt, you find that the door is locked. There is likely to be a key somewhere around. Where do you go?",
+            "Choices": [
+                {
+                    "Text": "The dilapidated building to the West",
+                    "Target": "Mausoleum"
+                },
+                {
+                    "Text": "The random wooden shed to the East",
+                    "Target": "WoodenShed"
+                }
+            ],
+            "Locks": [
+                {
+                    "Text": "Unlock the door",
+                    "Target": "Unlocked"
+                }
+            ]
+        },
+        "Unlocked": {
+            "Body": "You've unlocked the door to reveal a set of stairs, descending into the deep darkness below the crypt. What do you do?",
+            "Choices": [
+                {
+                    "Text": "Proceed down the staircase",
+                    "Target": "InsideCrypt"
+                },
+                {
+                    "Text": "Go back",
+                    "Target": "CryptEntrance"
+                }
+            ]
+        },
+        "WoodenShed": {
+            "Body": "The wood that makes up this shed has completely rotted due to the damp mist that plagues the graveyard. Holes and cracks decorate every inch of the shed defeating what its original purpose was before; an outhouse. However, you spot something perculiar on the ground in this outhouse and realize it's a key. What do you do?",
+            "Choices": [
+                {
+                    "Text": "Go back to where you started",
+                    "Target": "Graveyard"
+                },
+                {
+                    "Text": "Pick up the key",
+                    "Target": "GotKey"
+                }
+            ]
+        },
+        "GotKey": {
+            "Body": "You picked up a key",
+            "Choices": [
+                {
+                    "Text": "Find where this key would fit",
+                    "Target": "Graveyard"
+                }
+            ]
+        },
+        "InsideCrypt": {
+            "Body": "You descend the stairs for what seems like forever with each step echoing down to an endless bottom. It's dark but you've brought your torch to light your way. You eventually make your way to the bottom of the stone stairs, revealing a hallway that goes further into the Crypt and an open dark room to the right of you. What do you do?",
+            "Choices": [
+                {
+                    "Text": "Venture down the dark hallway",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "See what is in the room on the right",
+                    "Target": "RightRoom"
+                }
+            ]
+        },
+        "Hallway": {
+            "Body": "The claustrophobic hallway is lined with cobblestone and decaying ivy giving off a faint glow from bioluminescent buds. Venturing further down the hallway reveals is a ginormous stone door with chiseled depictions of writhing skeletons reaching up toward one floating skeleton wearing a robe. However, the door won't budge. It appears that there are no key slots or buttons around and lifting the door is impossible. What do you do?",
+            "Choices": [
+                {
+                    "Text": "Look for a possible way in through the other room",
+                    "Target": "RightRoom"
+                }
+            ]
+        },
+        "RightRoom": {
+            "Body": "This room is quite big as there are several tombs scattered around neatly. Suddenly, a lid from one of the tombs opens by itself and a large skeleton with a bow springs to life. Its eyes are locked onto you and it readies an attack! What do you do?",
+            "Choices": [
+                {
+                    "Text": "Attack with your sword",
+                    "Target": "Attack"
+                },
+                {
+                    "Text": "Run out of the crypt",
+                    "Target": "CryptEntrance"
+                }
+            ],
+            "NewRightRoom": {
+                "Body": "Where was once the animated skeleton now lies a pile of bones.",
+                "NewChoices": [
+                    {
+                        "Text": "Press hidden button",
+                        "Target": "ButtonPressed"
+                    },
+                    {
+                        "Text": "Leave",
+                        "Target": "Hallway"
+                    }
+                ]
+            }
+        },
+        "Attack": {
+            "Body": "You swing your greatsword with all your might at your opponent's torso and it crumbles to the floor in a pile of bones, dead. With the threat defeated, you notice a hidden stone button inside the coffin it came out of. What do you do?",
+            "Choices": [
+                {
+                    "Text": "Press the button",
+                    "Target": "ButtonPressed"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "ButtonPressed": {
+            "Body": "You hear the sound of stone grinding at the end of the hallway...",
+            "Choices": [
+                {
+                    "Text": "Go investigate",
+                    "Target": "NewHallway"
+                }
+            ]
+        },
+        "NewHallway": {
+            "Body": "When you head back to the hallway where the stone door was, you notice that it is not open and inside this room awaits you what seems like an infinite pile of treasures and gold. You were able to find the ancient treasure of the former wizard."
+        }
+    }
+}
